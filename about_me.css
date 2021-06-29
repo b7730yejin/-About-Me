@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KCC-eunyoung';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*요소 초기화*/
+* {
+	margin:0; padding:0;
+}
+html{  font-family: 'GmarketSansMedium';}
+main{display: flex;}
+a{text-decoration: none;}
+
+/*사이드 박스*/
+aside{
+    width: 20%;
+    min-height: 700px;
+    min-width: 350px;
+    background-color: rgb(186, 233, 231);
+}
+
+#last_td{border: 0;}
+#last_td #home_btn{
+    position: relative;
+    top: 3px;
+    padding-right: 5px;
+}
+aside table{width: 90%;margin: 0 auto;}
+aside table td{border-bottom: 2px dotted white;padding: 20px 0;}
+aside ul{
+    margin-top: 20px;
+    margin-left: 30px;
+    list-style: none;
+}
+aside li{margin-bottom: 15px;}
+#myName{margin-top: 10px; font-size: 22px;}
+#myinfo p { font-weight: bold;}
+#myinfo, #conection{text-align: center;}
+#myinfo img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 100px;
+}
+#last_td a{ color: black;font-weight: bold;}
+#last_td a:visited{ color: black}
+#last_td a:hover{font-size: 20px;color: gray}
+
+#connection_table{text-align: center;width: 300px;}
+#connection_table td{
+    border: 0;
+    padding: 0;
+    width: 0px;
+    word-break: break-all;
+    font-weight: bold;
+}
+#connection_table tr:last-of-type{ font-size: 12px;}
+/*본문(article)*/
+article{ margin-top: 15px; width: 100%;min-width: 1000px;}
+article div {margin: 0 auto;width: 90%;}
+
+article section h1{
+    margin: 0; padding: 0;}
+article a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(192, 238, 234);
+    border: 4px solid rgb(186, 233, 231);
+    border-radius: 20px;
+    margin: 5px 0;
+}
+article a:hover{color: gray;  opacity: .9;}
+article section div {
+    padding: 0 30px;
+    height: 0;    
+    overflow: hidden;
+    transition: height .4s ease-out, padding .4s ease-out;
+}
+article section h1{
+    padding-top: 3px;
+    font-size: 16px;
+}
+article section #info_table img{
+    display: block;
+    width: 200px;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 4px solid rgb(186, 233, 231); 
+    padding: 0;
+}
+article section div table{
+    margin: auto;
+    margin-top: 30px;
+}
+article section div #info_table th{
+    font-weight: normal;
+    padding: 0 20px;
+    border-right: 2px dotted rgba(128, 128, 128, 0.678);
+}
+article section div #info_table td{
+    padding: 0 20px;
+}
+article section div #motto_table div{
+    font-family: 'SDSamliphopangche_Outline';
+    font-size: 30px;
+    text-align: center;
+    height:60px;
+    width: 150px;
+    line-height: 60px;
+    border-radius: 200px;
+    margin: 50px auto;
+    color: white;
+}
+article section div #motto_table h2{
+    margin: 10px 0;
+    font-size: 50px;
+    font-family: 'KCC-eunyoung';
+}
+article section div #motto_table #cercle1{
+   background-color: rgb(252, 222, 126);
+}
+article section div #motto_table #cercle2{
+    background-color: rgb(112, 210, 255);
+}
+article section div #motto_table #cercle3{
+    background-color: salmon;
+}
+article section #blood_table img{
+    display: block;
+    width: 200px;
+    object-fit: contain;
+    padding-right: 80px;
+}
+article section #blood_table ul{
+    font-size: 17px;
+    list-style: none;
+    padding: 20px;
+    border: 3px dotted rgb(60, 80, 89); 
+    border-radius: 20px;
+}
+article section #blood_table p{
+    font-size: 14px;
+    padding: 0 10px;
+    color: red;
+}
+article section #star_table {
+    max-width: 1000px;
+    margin-bottom: 30px;
+}
+article section #star_table img{
+    display: block;
+    width: 200px;
+    object-fit: contain;
+    padding-right: 30px;
+}
+article section #star_table th{
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    height: 40px;
+    background-color:  rgb(95, 75, 188);
+}
+article section #star_table div{
+    width: fit-content;
+    height: 100%;
+    border: 1px solid rgb(95, 75, 188);
+    padding: 30px;
+}
+article section #mbti_table {
+    max-width: 1000px;
+    margin-bottom: 50px;
+}
+article section #mbti_table img{
+    display: block;
+    width: 200px;
+    object-fit: contain;
+    margin: 40px auto;
+}
+article section #mbti_table th{
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    height: 40px;
+    background-color: rgb(143, 117, 156);
+}
+article section #mbti_table div{
+    width: fit-content;
+    height: 100%;
+    border: 1px solid rgb(143, 117, 156);
+    padding: 30px;
+}
+article section #mbti_table a{
+    float: left;
+    background-color: white;
+    border: 0;
+}
+article section #mbti_table #atag_deco{
+    display: inline;
+    width: 15px;
+    position: relative;
+    top: 3px;
+    object-fit: contain;
+    margin: 0;
+    margin-right: 5px;
+}
+#intro:target+div { height: 280px;}
+#motto:target+div {height: 400px;}
+#bloodtype:target+div {height: 470px;}
+#constellation:target+div {height: 600px;}
+#mbti:target+div {height: 820px;}
+
+footer{
+    font-family: none;
+    font-size: 13px;
+}
