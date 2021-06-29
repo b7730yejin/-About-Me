@@ -66,8 +66,8 @@ aside li{
     color: black;
     font-weight: bold;
 }
-#last_td a:active{
-    color: gray
+#last_td a:link{
+    color: black;
 }
 #last_td a:visited{
     color: black
